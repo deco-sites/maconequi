@@ -97,6 +97,7 @@
               "deco-sites/maconequi/sections/Images/ShoppableBanner.tsx",
               "deco-sites/maconequi/sections/Links/LinkTree.tsx",
               "deco-sites/maconequi/sections/Links/Shortcuts.tsx",
+              "deco-sites/maconequi/sections/Logo/Logo.tsx",
               "deco-sites/maconequi/sections/Miscellaneous/CampaignTimer.tsx",
               "deco-sites/maconequi/sections/Miscellaneous/CookieConsent.tsx",
               "deco-sites/maconequi/sections/Newsletter/Newsletter.tsx",
@@ -104,6 +105,7 @@
               "deco-sites/maconequi/sections/Product/ProductShelf.tsx",
               "deco-sites/maconequi/sections/Product/SearchResult.tsx",
               "deco-sites/maconequi/sections/Product/Wishlist.tsx",
+              "deco-sites/maconequi/sections/SEOTexts/SEOhome.tsx",
               "deco-sites/maconequi/sections/Social/InstagramPosts.tsx",
               "deco-sites/maconequi/sections/Social/WhatsApp.tsx",
               "deco-sites/std/sections/Analytics.tsx",
@@ -6862,6 +6864,61 @@
       ],
       "title": "deco-sites/std/packs/vtex/loaders/wishlist.ts@Props"
     },
+    "ZGVjby1zaXRlcy9tYWNvbmVxdWkvY29tcG9uZW50cy9mb290ZXIvTmV3c2xldHRlci50c3g=@Form": {
+      "type": "object",
+      "properties": {
+        "placeholder": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Placeholder"
+        },
+        "buttonText": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Button Text"
+        },
+        "helpText": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "html",
+          "title": "Help Text"
+        }
+      },
+      "required": [],
+      "title": "Form"
+    },
+    "ZGVjby1zaXRlcy9tYWNvbmVxdWkvY29tcG9uZW50cy9mb290ZXIvTmV3c2xldHRlci50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Title"
+        },
+        "description": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "textarea",
+          "title": "Description"
+        },
+        "form": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9tYWNvbmVxdWkvY29tcG9uZW50cy9mb290ZXIvTmV3c2xldHRlci50c3g=@Form",
+          "title": "Form"
+        }
+      },
+      "required": [],
+      "title": "Props"
+    },
     "ZGVjby1zaXRlcy9zdGQvcGFja3MvdnRleC90eXBlcy50cw==@SKU": {
       "type": "object",
       "properties": {
@@ -9884,6 +9941,47 @@
       "required": [],
       "title": "deco-sites/maconequi/sections/Links/Shortcuts.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9tYWNvbmVxdWkvc2VjdGlvbnMvTG9nby9Mb2dvLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "logo": {
+          "type": "object",
+          "properties": {
+            "image": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+              "title": "Image"
+            },
+            "description": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Description"
+            },
+            "width": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "title": "Width"
+            },
+            "height": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "title": "Height"
+            }
+          },
+          "required": [
+            "image"
+          ],
+          "title": "Logo"
+        }
+      },
+      "required": [],
+      "title": "deco-sites/maconequi/sections/Logo/Logo.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML": {
       "type": "string",
       "format": "html",
@@ -10557,6 +10655,26 @@
         "columns"
       ],
       "title": "deco-sites/maconequi/components/search/SearchResult.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9tYWNvbmVxdWkvc2VjdGlvbnMvU0VPVGV4dHMvU0VPaG9tZS50c3g=@SEOProps": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string",
+          "title": "Text"
+        },
+        "description": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Description"
+        }
+      },
+      "required": [
+        "text"
+      ],
+      "title": "deco-sites/maconequi/sections/SEOTexts/SEOhome.tsx@SEOProps"
     },
     "ZGVjby1zaXRlcy9tYWNvbmVxdWkvc2VjdGlvbnMvU29jaWFsL0luc3RhZ3JhbVBvc3RzLnRzeA==@layout": {
       "type": "object",
@@ -13433,6 +13551,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9tYWNvbmVxdWkvc2VjdGlvbnMvTG9nby9Mb2dvLnRzeA==": {
+      "title": "deco-sites/maconequi/sections/Logo/Logo.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9tYWNvbmVxdWkvc2VjdGlvbnMvTG9nby9Mb2dvLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/maconequi/sections/Logo/Logo.tsx"
+          ],
+          "default": "deco-sites/maconequi/sections/Logo/Logo.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9tYWNvbmVxdWkvc2VjdGlvbnMvTWlzY2VsbGFuZW91cy9DYW1wYWlnblRpbWVyLnRzeA==": {
       "title": "deco-sites/maconequi/sections/Miscellaneous/CampaignTimer.tsx",
       "type": "object",
@@ -13577,6 +13716,27 @@
             "deco-sites/maconequi/sections/Product/Wishlist.tsx"
           ],
           "default": "deco-sites/maconequi/sections/Product/Wishlist.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9tYWNvbmVxdWkvc2VjdGlvbnMvU0VPVGV4dHMvU0VPaG9tZS50c3g=": {
+      "title": "deco-sites/maconequi/sections/SEOTexts/SEOhome.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9tYWNvbmVxdWkvc2VjdGlvbnMvU0VPVGV4dHMvU0VPaG9tZS50c3g=@SEOProps"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/maconequi/sections/SEOTexts/SEOhome.tsx"
+          ],
+          "default": "deco-sites/maconequi/sections/SEOTexts/SEOhome.tsx"
         }
       }
     },
@@ -14823,6 +14983,9 @@
           "$ref": "#/definitions/ZGVjby1zaXRlcy9tYWNvbmVxdWkvc2VjdGlvbnMvTGlua3MvU2hvcnRjdXRzLnRzeA=="
         },
         {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9tYWNvbmVxdWkvc2VjdGlvbnMvTG9nby9Mb2dvLnRzeA=="
+        },
+        {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9tYWNvbmVxdWkvc2VjdGlvbnMvTWlzY2VsbGFuZW91cy9DYW1wYWlnblRpbWVyLnRzeA=="
         },
         {
@@ -14842,6 +15005,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9tYWNvbmVxdWkvc2VjdGlvbnMvUHJvZHVjdC9XaXNobGlzdC50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9tYWNvbmVxdWkvc2VjdGlvbnMvU0VPVGV4dHMvU0VPaG9tZS50c3g="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9tYWNvbmVxdWkvc2VjdGlvbnMvU29jaWFsL0luc3RhZ3JhbVBvc3RzLnRzeA=="

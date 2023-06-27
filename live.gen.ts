@@ -37,10 +37,13 @@ import * as $$$$$$$$16 from "./sections/Miscellaneous/CampaignTimer.tsx";
 import * as $$$$$$$$17 from "./sections/Miscellaneous/CookieConsent.tsx";
 import * as $$$$$$$$18 from "./sections/Social/WhatsApp.tsx";
 import * as $$$$$$$$19 from "./sections/Social/InstagramPosts.tsx";
-import * as $$$$$$$$20 from "./sections/Links/LinkTree.tsx";
-import * as $$$$$$$$21 from "./sections/Links/Shortcuts.tsx";
-import * as $$$$$$$$22 from "./sections/Newsletter/Newsletter.tsx";
-import * as $$$$$$$$23 from "./sections/Header/Header.tsx";
+import * as $$$$$$$$20 from "./sections/Logo/Logo.tsx";
+import * as $$$$$$$$21 from "./sections/BuyCategory/BuyCategory.tsx";
+import * as $$$$$$$$22 from "./sections/Links/LinkTree.tsx";
+import * as $$$$$$$$23 from "./sections/Links/Shortcuts.tsx";
+import * as $$$$$$$$24 from "./sections/SEOTexts/SEOhome.tsx";
+import * as $$$$$$$$25 from "./sections/Newsletter/Newsletter.tsx";
+import * as $$$$$$$$26 from "./sections/Header/Header.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_invoke from "$live/routes/live/invoke/index.ts";
@@ -188,6 +191,7 @@ const manifest = {
     "$live/sections/PageInclude.tsx": i2$$$$0,
     "$live/sections/Slot.tsx": i2$$$$1,
     "$live/sections/UseSlot.tsx": i2$$$$2,
+    "deco-sites/maconequi/sections/BuyCategory/BuyCategory.tsx": $$$$$$$$21,
     "deco-sites/maconequi/sections/Category/CategoryBanner.tsx": $$$$$$$$2,
     "deco-sites/maconequi/sections/Category/CategoryList.tsx": $$$$$$$$3,
     "deco-sites/maconequi/sections/Content/Benefits.tsx": $$$$$$$$11,
@@ -196,20 +200,22 @@ const manifest = {
     "deco-sites/maconequi/sections/Content/Testimonials.tsx": $$$$$$$$8,
     "deco-sites/maconequi/sections/DesignSystem/DesignSystem.tsx": $$$$$$$$1,
     "deco-sites/maconequi/sections/Footer/Footer.tsx": $$$$$$$$0,
-    "deco-sites/maconequi/sections/Header/Header.tsx": $$$$$$$$23,
+    "deco-sites/maconequi/sections/Header/Header.tsx": $$$$$$$$26,
     "deco-sites/maconequi/sections/Images/BannerGrid.tsx": $$$$$$$$5,
     "deco-sites/maconequi/sections/Images/Carousel.tsx": $$$$$$$$7,
     "deco-sites/maconequi/sections/Images/ImageGallery.tsx": $$$$$$$$6,
     "deco-sites/maconequi/sections/Images/ShoppableBanner.tsx": $$$$$$$$4,
-    "deco-sites/maconequi/sections/Links/LinkTree.tsx": $$$$$$$$20,
-    "deco-sites/maconequi/sections/Links/Shortcuts.tsx": $$$$$$$$21,
+    "deco-sites/maconequi/sections/Links/LinkTree.tsx": $$$$$$$$22,
+    "deco-sites/maconequi/sections/Links/Shortcuts.tsx": $$$$$$$$23,
+    "deco-sites/maconequi/sections/Logo/Logo.tsx": $$$$$$$$20,
     "deco-sites/maconequi/sections/Miscellaneous/CampaignTimer.tsx": $$$$$$$$16,
     "deco-sites/maconequi/sections/Miscellaneous/CookieConsent.tsx": $$$$$$$$17,
-    "deco-sites/maconequi/sections/Newsletter/Newsletter.tsx": $$$$$$$$22,
+    "deco-sites/maconequi/sections/Newsletter/Newsletter.tsx": $$$$$$$$25,
     "deco-sites/maconequi/sections/Product/ProductDetails.tsx": $$$$$$$$15,
     "deco-sites/maconequi/sections/Product/ProductShelf.tsx": $$$$$$$$14,
     "deco-sites/maconequi/sections/Product/SearchResult.tsx": $$$$$$$$13,
     "deco-sites/maconequi/sections/Product/Wishlist.tsx": $$$$$$$$12,
+    "deco-sites/maconequi/sections/SEOTexts/SEOhome.tsx": $$$$$$$$24,
     "deco-sites/maconequi/sections/Social/InstagramPosts.tsx": $$$$$$$$19,
     "deco-sites/maconequi/sections/Social/WhatsApp.tsx": $$$$$$$$18,
     "deco-sites/std/sections/Analytics.tsx": i2$$$$3,

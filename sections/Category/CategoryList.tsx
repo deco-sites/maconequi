@@ -45,8 +45,8 @@ function CardText(
       }`}
     >
       {tag && <div class="text-sm text-primary">{tag}</div>}
-      {label && <h3 class="text-lg text-base-content">{label}</h3>}
-      {description && <div class="text-sm text-neutral">{description}</div>}
+      {label && <h3 class="text-xl text-base-content">{label}</h3>}
+      {description && <div class="text-sm py-4">{description}</div>}
     </div>
   );
 }
@@ -89,7 +89,7 @@ function CategoryList(props: Props) {
         alignment={layout.headerAlignment || "center"}
       />
 
-      <Slider class="carousel carousel-start gap-4 lg:gap-8 row-start-2 row-end-5">
+      <Slider class="carousel carousel-start justify-center gap-4 lg:gap-8 row-start-2 row-end-5">
         {list.map((
           { tag, label, description, href, image, buttonText },
           index,
@@ -100,7 +100,7 @@ function CategoryList(props: Props) {
           >
             <a
               href={href}
-              class="flex flex-col gap-4 lg:w-[280px] w-40 lg:h-auto"
+              class="flex flex-col gap-4 lg:w-[290px] w-40 lg:h-auto"
             >
               {layout.categoryCard?.textPosition === "top" &&
                 (
@@ -115,11 +115,11 @@ function CategoryList(props: Props) {
                 (
                   <figure>
                     <Image
-                      class="card w-full"
+                      class="card w-full rounded-none"
                       src={image}
                       alt={description || label || tag}
-                      width={160}
-                      height={195}
+                      width={190}
+                      height={220}
                       loading="lazy"
                     />
                   </figure>
